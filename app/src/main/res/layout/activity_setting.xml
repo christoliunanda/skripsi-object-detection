@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/txtSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSetting"
+        android:layout_marginTop="45dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Model : " />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewModel"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textViewModel"
+
+        android:layout_toEndOf="@+id/textViewModel"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewModel"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Email  : " />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewEmail"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewEmail"
+    />
+
+    <TextView
+        android:id="@+id/textViewTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEmail"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Telp    : " />
+
+    <EditText
+        android:id="@+id/editTextTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewTelp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewTelp"
+        />
+
+    <Button
+        android:id="@+id/button_save_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTelp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Save Setting"
+        android:onClick="save_setting"
+        />
+
+</RelativeLayout>
